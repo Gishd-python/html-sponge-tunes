@@ -8,51 +8,15 @@
     
   </style>
 
-    <title>home- sponge tunes</title>
-
-    <button id='hahah' type="button"
-    onclick="document.getElementById('demo').innerHTML = Date()">
-    Click me to display Date and Time.</button>
-    <script>
-
-    function  downloadURI(uri, name) 
-    {
-        var link = document.createElement("a");
-        link.download = name;
-        link.href = uri;
-        link.click();
-    }
-
-    </script>
+    <title>Sponge Tunes - Home</title>
 
     <script>
       function hello()
       {
-        var hello = document.getElementById('hello');
+        document.getElementById('hello');
         hello.alert('hi')
       }
-
-
-
     </script>
-    <form id='hello' action="hello()">
-      First name:<br>
-      <input type="text" name="firstname"   value="Mickey">
-      <br>
-      Last name:<br>
-      <input type="text" name="lastname" value="Mouse">
-    <br><br>
-      <input type="submit" value="Submit">
-    </form> 
-
-    <p id='demo'></p>
-
-    <select>
-      <option>hi</option>
-      <option>hello</option>
-    </select>
-
-    <input name='hi' type='text'> hello there</input>
 
     <h3>
       ░▓▓▓▓▓░▓▓▓▓▓▓░
@@ -69,6 +33,7 @@
         return "no u"
       print('hi')
     </script>
+
 
     <style>
     a:link, a:visited {
@@ -97,6 +62,29 @@
 
     <a href="input.html">Add Music</a>
 
+    <a href='search_maybe.html'> maybe</a>
+
+
+    <form align="Right" action="search.html" target="_blank">
+
+      <input type='text' id="searchInput"></input>
+      <input type="submit" value="🔍"></input>
+
+    </form>
+
+
+    <script>
+      
+      if(searchInput = "ABBA"){
+        Artist = "ABBA"
+      }
+      else if(searchInput = "Dodie"){
+        Artist = "Dodie"
+      }
+
+      
+
+    </script>
 
     <br>
     <br>
@@ -129,7 +117,7 @@
     </style>
 
 
-    <div class="musicbox">
+    <div class="musicbox" name="ABBA">
     
     <audio controls> <!--MammaMia-->
       <source src="Music/mama mia.mp3" type="audio/mpeg"> 
@@ -139,7 +127,7 @@
 
     </div>
 
-    <div class="musicbox">
+    <div class="musicbox" name="ABBA">
 
     <audio controls> <!--TakeAChanceOnMe-->
       <source src="Music/take a chance on me.mp3" type="audio/mpeg"> 
@@ -153,7 +141,7 @@
     <div class="musicbox">
 
     <audio controls> <!--IHaveAHoleInMyTooth-->
-      <source src="i have a hole in my tooth.mp3" type="audio/mpeg"> 
+      <source src="Music/i have a hole in my tooth.mp3" type="audio/mpeg"> 
     </audio>
     <h3>I Have A Hole In My Tooth <img src='https://styles.redditmedia.com/t5_33vel/styles/communityIcon_44lszoisn6r11.png' class="imageicon" align="Right">
     </h3><h3 align="Left">by Dodie</h3>
