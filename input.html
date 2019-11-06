@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html>
+  <body>
+  <style>
+    body {background-color: #CAE6E5; padding:2em }
+  </style>
+
+    <title>add music- sponge tunes</title>
+
+    <select>
+      <option>hi</option>
+      <option>hello</option>
+    </select>
+    <h3>
+      ░▓▓▓▓▓░▓▓▓▓▓▓░
+      <br>
+      ▓▓▓▓░░░░░▓▓░░░░░ Ⓢ Ⓟ Ⓞ Ⓝ Ⓖ Ⓔ
+      <br>
+      ░░▓▓▓▓░░░▓▓░░░░░░ Ⓣ Ⓤ Ⓝ Ⓔ Ⓢ
+      <br>
+      ▓▓▓▓▓░░░░▓▓░░░░
+    </h3>
+
+    <style>
+      a:link, a:visited {
+        float: left;
+        background-color: #EFDA1F;
+        color: black;
+        padding: 15px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-family: Helvetica;
+        font-weight: bold;
+        margin: 5px;
+        border-radius: 25px;
+      }
+
+    a:hover, a:active {
+      background-color: #FF8B26;
+    }
+
+    </style>
+
+    <a href="index.html" style="color:">Home</a>
+
+    <a href="sadmusic.html">Sad Music</a>
+
+    <a href="input.html">Add Music</a>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h2 style="font-family: Helvetica">Add Music</h2>
+
+    <label style="font-family: Helvetica">Insert a File:</label>
+
+
+                                                  
+    <br>
+    <br>
+
+
+    <style>
+    .musicbox{
+      background-color:#E1E0E3;
+      border:17px;
+      border-style:solid;
+      padding:1em;
+      border-radius: 25px;
+      float: left;
+      margin:5px;
+      font-family: Helvetica;
+      width: 300px
+    }
+
+    .imageicon{
+      width: 65px;
+      height: 65px;
+      link: google.com;
+      border: 5px; 
+      border-style: none; 
+      border-radius: 65px;
+    }
+    </style>
+
+
+    <div class="musicbox" id="musicplayer" hidden>
+    <audio id="fileupload" controls>
+      <source src="" id="audio">
+    </audio>
+    <h3 align="Left"> Title <img src='google.com' class="imageicon" align="Right"> </h3>
+    <h3 align="Left"> by Artist </h3>
+    </div>
+
+    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" enctype="multipart/form-data" method="post">
+      <input id="fileupload" type="file" name="myfile" />
+      <input type="submit" value="Submit" name="submit" />
+    </form>
+    <!--https://stackoverflow.com/questions/39072741/file-upload-not-working-php-->
+    <?php
+    file_uploads = On
+    $target_dir = "Music/";
+    $target_file = $target_dir . basename($_FILES["fileupload"]["name"]);
+    $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+
+    if (file_exists($target_file)) {
+        echo "Sorry, file already exists.";
+        $uploadOk = 0;
+    }
+
+    if($imageFileType != "mp3") {
+        echo "Sorry, only mp3 files allowed.";
+        $uploadOk = 0;
+    }
+    ?>
+    
+    <button onclick="myFunction()">Get Music</button>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById()
+      }
+
+  </body>
+</html>
