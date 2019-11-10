@@ -1,68 +1,99 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 
 <html>
+  
   <body>
   <style>
     body {background-color: #CAE6E5; padding:2em }
+    
   </style>
 
-    <title>add music- sponge tunes</title>
+    <title>Sponge Tunes - Home</title>
 
-    <select>
-      <option>hi</option>
-      <option>hello</option>
-    </select>
+    <script>
+      function hello()
+      {
+        document.getElementById('hello');
+        hello.alert('hi')
+      }
+    </script>
+
     <h3>
       ░▓▓▓▓▓░▓▓▓▓▓▓░
       <br>
-      ▓▓▓▓░░░░░▓▓░░░░░ Ⓢ Ⓟ Ⓞ Ⓝ Ⓖ Ⓔ
+      ▓▓▓▓░░░░░▓▓░░░░░ Ⓢ Ⓟ Ⓞ Ⓝ Ⓖ Ⓔ 
       <br>
       ░░▓▓▓▓░░░▓▓░░░░░░ Ⓣ Ⓤ Ⓝ Ⓔ Ⓢ
       <br>
       ▓▓▓▓▓░░░░▓▓░░░░
     </h3>
 
-    <style>
-      a:link, a:visited {
-        float: left;
-        background-color: #EFDA1F;
-        color: black;
-        padding: 15px 25px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-family: Helvetica;
-        font-weight: bold;
-        margin: 5px;
-        border-radius: 25px;
-      }
 
-    a:hover, a:active {
+    <script type="python">
+      def me():
+        return "no u"
+      print('hi')
+      
+    </script>
+
+
+    <style>
+    a:link, a:visited {
+      float: left;
+      background-color: #EFDA1F;
+      color: black;
+      padding: 15px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-family: Helvetica;
+      font-weight: bold;
+      margin: 5px;
+      border-radius: 25px;
+    }
+
+    a:hover, a:active{
       background-color: #FF8B26;
     }
 
     </style>
 
-    <a href="index.html" style="color:">Home</a>
+    <a href="index.html">Home</a>
 
     <a href="sadmusic.html">Sad Music</a>
 
     <a href="input.html">Add Music</a>
 
+    <a href='search_maybe.html'> maybe</a>
+
+
+    <form align="Right" action="search.html" target="_blank">
+
+      <input type='text' id="searchInput"></input>
+      <input type="submit" value="🔍"></input>
+
+    </form>
+
+
+    <script>
+      
+      if(searchInput = "ABBA"){
+        Artist = "ABBA"
+      }
+      else if(searchInput = "Dodie"){
+        Artist = "Dodie"
+      }
+
+      
+
+    </script>
+
     <br>
     <br>
     <br>
     <br>
 
-    <h2 style="font-family: Helvetica">Add Music</h2>
-
-    <label style="font-family: Helvetica">Insert a File:</label>
-
-
-                                                  
-    <br>
-    <br>
-
+    <h2 style="font-family: Helvetica">Home</h2>
 
     <style>
     .musicbox{
@@ -88,42 +119,69 @@
     </style>
 
 
-    <div class="musicbox" id="musicplayer" hidden>
-    <audio id="fileupload" controls>
-      <source src="" id="audio">
+    <div class="musicbox" name="ABBA">
+    
+    <audio controls> <!--MammaMia-->
+      <source src="Music/mama mia.mp3" type="audio/mpeg"> 
     </audio>
-    <h3 align="Left"> Title <img src='google.com' class="imageicon" align="Right"> </h3>
-    <h3 align="Left"> by Artist </h3>
+    <h3 align="Left"> Mamma Mia <img src='https://hips.hearstapps.com/digitalspyuk.cdnds.net/16/43/1477483261-abba-ola-lager-premium-rockshot-.jpg?resize=480:*' class="imageicon" align="Right"> </h3>
+    <h3 align="Left"> by ABBA </h3>
+
     </div>
 
-    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" enctype="multipart/form-data" method="post">
-      <input id="fileupload" type="file" name="myfile" />
-      <input type="submit" value="Submit" name="submit" />
-    </form>
-    <!--https://stackoverflow.com/questions/39072741/file-upload-not-working-php-->
-    <?php
-    file_uploads = On
-    $target_dir = "Music/";
-    $target_file = $target_dir . basename($_FILES["fileupload"]["name"]);
-    $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+    <div class="musicbox" name="ABBA">
 
-    if (file_exists($target_file)) {
-        echo "Sorry, file already exists.";
-        $uploadOk = 0;
-    }
+    <audio controls> <!--TakeAChanceOnMe-->
+      <source src="Music/take a chance on me.mp3" type="audio/mpeg"> 
+    </audio>
+    <h3 align="Left"> Take A Chance on Me <img src='https://hips.hearstapps.com/digitalspyuk.cdnds.net/16/43/1477483261-abba-ola-lager-premium-rockshot-.jpg?resize=480:*' class="imageicon" align="Right"> </h3>
+    <h3 align="Left"> by ABBA </h3>
 
-    if($imageFileType != "mp3") {
-        echo "Sorry, only mp3 files allowed.";
-        $uploadOk = 0;
-    }
-    ?>
+    </div>
+
+
+    <div class="musicbox">
+
+    <audio controls> <!--IHaveAHoleInMyTooth-->
+      <source src="Music/i have a hole in my tooth.mp3" type="audio/mpeg"> 
+    </audio>
+    <h3>I Have A Hole In My Tooth <img src='https://styles.redditmedia.com/t5_33vel/styles/communityIcon_44lszoisn6r11.png' class="imageicon" align="Right">
+    </h3><h3 align="Left">by Dodie</h3>
+
+    </div>
+
+
+    <div class="musicbox">
+
+    <audio controls> <!--WouldYouBeSoKind-->
+      <source src="Music/would you be so kind.mp3" type="audio/mpeg"> 
+    </audio>
+    <h3>Would You Be So Kind <img src='https://styles.redditmedia.com/t5_33vel/styles/communityIcon_44lszoisn6r11.png' class="imageicon" align="Right">
+    </h3>
+    <h3 align="Left"> by Dodie </h3>
+
+    </div>
+
+    <div class="musicbox">
+
+    <audio controls> <!--WouldYouBeSoKind-->
+      <source src="Music/party tattoos.mp3" type="audio/mpeg"> 
+    </audio>
+    <h3>Party Tattoos <img src='https://styles.redditmedia.com/t5_33vel/styles/communityIcon_44lszoisn6r11.png' class="imageicon" align="Right">
+    </h3>
+    <h3 align="Left"> by Dodie </h3>
+
+    </div>
+
+    <div class="musicbox">
     
-    <button onclick="myFunction()">Get Music</button>
+    <audio controls> <!--ElCascabel-->
+      <source src="Music/el cascabel.mp3" type="audio/mpeg"> 
+    </audio>
+    <h3 align="Left"> El Cascabel <img src='https://www.modernscore.com/media/catalog/product/cache/2/image/600x600/9df78eab33525d08d6e5fb8d27136e95/p/a/partition_Lorenzo_Barcelata_Maria_Elena_39017_2.jpg' class="imageicon" align="Right"> </h3>
+    <h3 align="Left"> by Lorenzo Barcelata </h3>
 
-    <script>
-      function myFunction() {
-        var x = document.getElementById()
-      }
+    </div>
 
   </body>
 </html>
