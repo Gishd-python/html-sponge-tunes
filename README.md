@@ -1,6 +1,4 @@
-# html-sponge-tunes
-
-List of to-do's (in order of importance)
+# List of to-do's (in order of importance)
 
 
 
