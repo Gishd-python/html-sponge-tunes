@@ -1,16 +1,14 @@
 <?php
-file_uploads = On
-$target_dir = "Music/";
-$target_file = $target_dir . basename($_FILES["fileupload"]["name"]);
-$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+        if (isset($_POST['submit'])) {
+            echo "<p>" . $_POST['myfile'] . " => file input successfull</p>";
+            $target_dir = "Music ";
+            $file_name = $_FILES['myfile']['name'];
+            $file_tmp = $_FILES['myfile']['tmp_name'];
 
-if (file_exists($target_file)) {
-    echo "Sorry, file already exists.";
-    $uploadOk = 0;
-}
-
-if($imageFileType != "mp3") {
-    echo "Sorry, only mp3 files allowed.";
-    $uploadOk = 0;
-}
-?>
+            if (move_uploaded_file($file_tmp, $target_dir . $file_name)) {
+                echo "<h1>File Upload Success</h1>";
+            } else {
+                echo "<h1>File Upload not successfull</h1>";
+            }
+        }
+        ?>
