@@ -1,6 +1,6 @@
 PUBLISHED SITE IS AT:
 
-https://gishd-python.github.io/html-sponge-tunes/
+https://gishd-python.github.io/sponge-tunes/
 
 
 
