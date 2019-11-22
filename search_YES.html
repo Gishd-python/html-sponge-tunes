@@ -70,8 +70,8 @@
       
       
     <!-- input tag -->
-    <input id="searchbar" onkeyup="search_animal()" type="text"
-        name="search" placeholder="Search animals.."> 
+    <input id="searchbar" onkeyup="search_musicbox()" type="text"
+        name="search" placeholder="..."> 
           
           
           
@@ -98,7 +98,7 @@
     <script> function search_animal() { 
     let input = document.getElementById('searchbar').value 
     input=input.toLowerCase(); 
-    let x = document.getElementsByClassName('animals'); 
+    let x = document.getElementsByClassName('musicbox'); 
       
     for (i = 0; i < x.length; i++) {  
         if (!x[i].innerHTML.toLowerCase().includes(input)) { 
