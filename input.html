@@ -110,9 +110,10 @@
     <h3 align="Left"> by Artist </h3>
     </div>
 
-    <form action="/upload.php" enctype="multipart/form-data" method="post">
-      <input id="fileupload" type="file" name="myfile" />
-      <input type="submit" value="Submit" name="submit" />
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+    Select music to upload:
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" value="Upload File" name="submit">
     </form>
     <!--https://stackoverflow.com/questions/39072741/file-upload-not-working-php-->
     
