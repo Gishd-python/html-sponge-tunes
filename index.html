@@ -92,6 +92,60 @@
 
       <input id="searchbar" onkeyup="search_musicbox()" type="text"
         name="search" placeholder="..."> 
+     
+     <input id="searchbar" onkeyup="search_musicbox()" type="text"
+        name="search" placeholder="..."> 
+          
+          
+          
+
+    <div class="musicbox" name = "ABBA">
+
+    <audio controls> <!--MammaMia-->
+    <source src="Music/mama mia.mp3" type="audio/mpeg"> 
+    </audio>
+
+    <h3 align="Left"> Mamma Mia <img src='https://hips.hearstapps.com/digitalspyuk.cdnds.net/16/43/1477483261-abba-ola-lager-premium-rockshot-.jpg?resize=480:*' class="imageicon" align="Right"> </h3>
+    <h3 align="Left"> by ABBA </h3>
+
+    </div>
+      
+      
+    <div class="musicbox" name = "Dodie">
+      
+    <audio controls> <!--WouldYouBeSoKind-->
+    <source src="Music/Party Tattoos.mp3" type="audio/mpeg"> 
+    </audio>
+      
+    <h3>Party Tattoos <img src='https://styles.redditmedia.com/t5_33vel/styles/communityIcon_44lszoisn6r11.png' class="imageicon" align="Right">
+    </h3>
+    <h3 align="Left"> by Dodie </h3>
+    
+    </div>
+
+          
+          
+          
+          
+    </ol> 
+      
+    <!-- linking javscript -->
+    <script>
+          function search_musicbox() { 
+          let input = document.getElementById('searchbar').value // getting the user input from the searchbar
+          input=input.toLowerCase(); //makes all results have lowercase letters
+          let x = document.getElementsByClassName('musicbox'); //getting all objects with the class name: musicbox
+
+          for (i = 0; i < x.length; i++) {                          // while i is less than the length of x i += 1 (and goes in a loop)
+              if (!x[i].innerText.toLowerCase().includes(input)) {  // if anything in html code does not (so basically if nothing has it) then display nothing
+                  x[i].style.display="none";                        // display none
+              } 
+              else { 
+                  x[i].style.display="list-item";                   // if any html code does in fact have the input, show it
+              } 
+          } 
+      } 
+    </script>
 
     </form>
 
