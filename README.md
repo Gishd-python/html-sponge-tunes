@@ -7,7 +7,7 @@ Adjustable Screen Sizes (different screens)
 
 Place more songs in the program
 
-Make an icon
+Make a folder with all of the artist images so we don't have to use the web
 
 Allow user to add songs to playlist? or just create playlists
 
@@ -15,6 +15,7 @@ Comments?
 
 -------------------------------------------Completed-----Tasks---------------------------------------------------------
 
+(((Make an icon)))
 
 ((((wait for a little while)PLACE THE SONGS IN 'for_HENRY' IN ACTUAL PAGES )))
 
