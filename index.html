@@ -135,6 +135,15 @@
     }
     </style>
 
+    <script>
+
+    var ul = document.querySelector('ul');
+    for (var i = ul.children.length; i >= 0; i--) {
+        ul.appendChild(ul.children[Math.random() * i | 0]);
+    }
+     </script>
+
+    <ul>
 
     <div class="musicbox" name="ABBA">
     
@@ -291,6 +300,8 @@
     <h3 align="Left"> by Toto </h3>
 
     </div>
+
+    </ul>
 
     <p style="color: #CAE6E5"> itsssssssss suup </p>
 
