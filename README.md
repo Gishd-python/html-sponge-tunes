@@ -13,6 +13,8 @@ Allow user to add songs to playlist? or just create playlists
 
 Comments?
 
+Rdanom Odrer
+
 -------------------------------------------Completed-----Tasks---------------------------------------------------------
 
 (((Make an icon)))
