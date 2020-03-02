@@ -1,8 +1,5 @@
 # List of to-do's (in order of importance)
 
-
-Work on uploading 'upload.php' UNDER CONSTRUCTION
-
 Adjustable Screen Sizes (different screens)
 
 Place more songs in the program
