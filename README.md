@@ -12,7 +12,7 @@
 
 - [ ] Rdanom Odrer
 
-* COMPLETED
+# * COMPLETED
 
 - [x] Make an icon
 
