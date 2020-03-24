@@ -12,11 +12,11 @@
 
 - [ ] Rdanom Odrer
 
-
+* COMPLETED
 
 - [x] Make an icon
 
-- [x] wait for a little while)PLACE THE SONGS IN 'for_HENRY' IN ACTUAL PAGES 
+- [x] PLACE THE SONGS IN 'for_HENRY' IN ACTUAL PAGES 
 
 - [x] MAKE MUSIC BOXES FOR SONGS THAT DON'T HAVE MUSIC BOXES 
 
