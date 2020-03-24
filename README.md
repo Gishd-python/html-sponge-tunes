@@ -1,23 +1,23 @@
 # List of to-do's (in order of importance)
 
-Adjustable Screen Sizes (different screens)
+- [ ] Adjustable Screen Sizes (different screens)
 
-Place more songs in the program
+- [ ] Place more songs in the program
 
-Make a folder with all of the artist images so we don't have to use the web
+- [ ] Make a folder with all of the artist images so we don't have to use the web
 
-Allow user to add songs to playlist? or just create playlists
+- [ ] Allow user to add songs to playlist? or just create playlists
 
-Comments?
+- [ ] Comments?
 
-Rdanom Odrer
+- [ ] Rdanom Odrer
 
--------------------------------------------Completed-----Tasks---------------------------------------------------------
 
-(((Make an icon)))
 
-((((wait for a little while)PLACE THE SONGS IN 'for_HENRY' IN ACTUAL PAGES )))
+- [x] Make an icon
 
-(((MAKE MUSIC BOXES FOR SONGS THAT DON'T HAVE MUSIC BOXES )))
+- [x] wait for a little while)PLACE THE SONGS IN 'for_HENRY' IN ACTUAL PAGES 
 
-(((WORK ON THE SEARCH FUNCTION FOR SONGS/MUSIC_BOXES  (both the search songs that are uploaded to github, and hopefully find a way to play songs off the web) )))
+- [x] MAKE MUSIC BOXES FOR SONGS THAT DON'T HAVE MUSIC BOXES 
+
+- [x] WORK ON THE SEARCH FUNCTION FOR SONGS/MUSIC_BOXES  (both the search songs that are uploaded to github, and hopefully find a way to play songs off the web) 
