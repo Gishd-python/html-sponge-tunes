@@ -30,7 +30,7 @@
         var usedBoxes = [];
         for (let box in toUseMusicBoxes) {
             if (!usedBoxes.includes(box)) {
-            document.getElementById('musicHolder').innerHTML += box;
+            document.getElementById('musicHolder').innerHTML += toUseMusicBoxes[box];
             usedBoxes.push(box);
             }
         }
