@@ -27,10 +27,12 @@
                       '\n\n<div class="musicbox">\n\n<audio controls> <!--MammaMia-->\n  <source src="Music/mama mia.mp3" type="audio/mpeg"> \n</audio>\n<h3 align="Left"> Mamma Mia <img src=\'Images/ABBA.jpg\' class="imageicon" align="Right"> </h3>\n<h3 align="Left"> by ABBA </h3>\n\n</div>'];
     var toUseMusicBoxes = musicBoxes;
     function randomOrder() {
-        for (var i = 0; i < musicBoxes.length; i++) {
-            var toUse = Math.floor(Math.random() * toUseMusicBoxes.length-1);
-            document.getElementById('musicHolder').innerHTML += toUseMusicBoxes[toUse];
-            toUseMusicBoxes.splice(toUse, 1);
+        var usedBoxes = [];
+        for (let box in toUseMusicBoxes) {
+            if (!usedBoxes.includes(box)) {
+            document.getElementById('musicHolder').innerHTML += box;
+            usedBoxes.push(box);
+            }
         }
     }
      
