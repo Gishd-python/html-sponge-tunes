@@ -50,6 +50,7 @@
     <a href='sitemap.html'>Sitemap</a>
     
     <a href='aboutus.html'>About Us/Contact Info</a>
+   
 
     <br>
     <br>
@@ -80,3 +81,22 @@
       font-family: Helvetica;
     }
     </style>
+       <script>
+          function search_musicbox() { 
+          let input = document.getElementById('searchbar').value // getting the user input from the searchbar
+          input=input.toLowerCase(); //makes all results have lowercase letters
+          let x = document.getElementsByClassName('musicbox'); //getting all objects with the class name: musicbox
+
+          for (i = 0; i < x.length; i++) {                          // while i is less than the length of x i += 1 (and goes in a loop)
+              if (!x[i].innerText.toLowerCase().includes(input)) {  // if the search value is not DISPLAYED in a musicbox don't show it
+                  x[i].style.display="none";                        // display none -> to make it invisible and take up 0 space
+              } 
+              else { 
+                  x[i].style.display="list-item";                   // if any text does in fact have the input, show it
+              } 
+          } 
+      } 
+  
+    </script>
+ </body>
+</html>
